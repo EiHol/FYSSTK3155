@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+
+% Page layout
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=2cm,
+  right=2cm,
+  top=2cm,
+  bottom=2cm
+}
+\linespread{1.5}
+
+% Font and encoding
+\usepackage{times}
+\usepackage[english]{babel}
+
+% Graphics and colors
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Math and symbols
+\usepackage{amsmath}
+\usepackage{upgreek}
+
+% Code listings
+\usepackage{listings}
+\usepackage{minted}
+
+% Footnotes
+\usepackage{dblfnote}
+\DFNalwaysdouble
+
+% References and links (load these near the end)
+\usepackage{hyperref}
+\hypersetup{
+  breaklinks=true,
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  filecolor=magenta,
+  urlcolor=blue
+}
+\usepackage{cleveref}
+
+% Bibliography (load after hyperref)
+\usepackage[style=apa,backend=biber,natbib=true]{biblatex}
+\addbibresource{main.bib}
+
+
+\begin{document}
+
+\title{Project 1}
+
+\author{Eirik Holm}
+
+\maketitle
+
+\newpage
+
+\begin{abstract}
+    Abstract
+\end{abstract}
+
+
+\tableofcontents
+
+
+\section{Introduction}
+
+\section{Theory}
+
+\section{Methods}
+
+\section{Results}
+
+\section{Conclusion}
+
+\appendix
+
+\section{Appendix}
+
+
+\printbibliography
+
+\end{document}
