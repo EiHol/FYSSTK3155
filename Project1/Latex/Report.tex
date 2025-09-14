@@ -1,4 +1,5 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt, a4paper, twocolumn]{article}
+
 
 % Page layout
 \usepackage{geometry}
@@ -7,12 +8,12 @@
   left=2cm,
   right=2cm,
   top=2cm,
-  bottom=2cm
+  bottom=2cm,
+  columnsep=1cm
 }
 \linespread{1.5}
 
 % Font and encoding
-\usepackage{times}
 \usepackage[english]{babel}
 
 % Graphics and colors
@@ -50,7 +51,9 @@
 
 \begin{document}
 
-\title{Project 1}
+\twocolumn[
+  \begin{@twocolumnfalse}
+  \title{Project 1}
 
 \author{Eirik Holm}
 
@@ -59,11 +62,15 @@
 \newpage
 
 \begin{abstract}
-    Abstract
+    Abstract text goes here
 \end{abstract}
+\vspace{1cm}
+\end{@twocolumnfalse}
+]
 
 
-\tableofcontents
+% un-comment if table of contents is needed
+%\tableofcontents
 
 
 \section{Introduction}
