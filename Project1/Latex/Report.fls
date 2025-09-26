@@ -1,6 +1,6 @@
-PWD c:\Users\eirik\Desktop\FYSSTK3155_Dataprocessing_and_MachineLearning\FYSSTK3155\Project1\Latex
+PWD c:\Users\eirik\Documents\FYSSTK3155\FYSSTK3155\Project1\Latex
 INPUT C:\Users\eirik\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\eirik\Desktop\FYSSTK3155_Dataprocessing_and_MachineLearning\FYSSTK3155\Project1\Latex\Report.tex
+INPUT c:\Users\eirik\Documents\FYSSTK3155\FYSSTK3155\Project1\Latex\Report.tex
 OUTPUT Report.log
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -91,8 +91,6 @@ INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\fvextra\fvextra.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\fvextra\fvextra.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\fancyvrb\fancyvrb.sty
-INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\upquote\upquote.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\upquote\upquote.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\lineno\lineno.sty
@@ -103,6 +101,8 @@ INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\latex2pydata\latex2pydata.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\latex2pydata\latex2pydata.sty
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
@@ -147,9 +147,15 @@ INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
@@ -256,6 +262,7 @@ INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\eul
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\eirik\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\eirik\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT Report.aux

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.11" bltxversion="3.21" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.11" bltxversion="3.20" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -994,7 +994,6 @@
     <bcf:option datatype="string">alphaothers</bcf:option>
     <bcf:option datatype="string">sortalphaothers</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
-    <bcf:option datatype="string">citepagerange</bcf:option>
     <bcf:option datatype="string">texencoding</bcf:option>
     <bcf:option datatype="string">bibencoding</bcf:option>
     <bcf:option datatype="string">sortingtemplatename</bcf:option>
@@ -3093,18 +3092,15 @@
     <bcf:sort order="5">
       <bcf:sortitem order="1">sortyear</bcf:sortitem>
       <bcf:sortitem order="2">year</bcf:sortitem>
-      <bcf:sortitem order="3">eventyear</bcf:sortitem>
-      <bcf:sortitem literal="1" order="4">-2000000000</bcf:sortitem>
+      <bcf:sortitem literal="1" order="3">-2000000000</bcf:sortitem>
     </bcf:sort>
     <bcf:sort order="6">
       <bcf:sortitem order="1">month</bcf:sortitem>
-      <bcf:sortitem order="2">eventmonth</bcf:sortitem>
-      <bcf:sortitem literal="1" order="3">-2000000000</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
     </bcf:sort>
     <bcf:sort order="7">
       <bcf:sortitem order="1">day</bcf:sortitem>
-      <bcf:sortitem order="2">eventday</bcf:sortitem>
-      <bcf:sortitem literal="1" order="3">-2000000000</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
     </bcf:sort>
     <bcf:sort order="8">
       <bcf:sortitem order="1">sorttitle</bcf:sortitem>
