@@ -1,20 +1,235 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{26}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
 
-\endinput
+\bibitem[{\citenamefont{Bishop}(2006)}]{patrec}
+\bibinfo{author}{\bibfnamefont{C.~M.} \bibnamefont{Bishop}},
+  \emph{\bibinfo{title}{Pattern Recognition and Machine Learning}}
+  (\bibinfo{publisher}{Springer Science}, \bibinfo{address}{Cambridge CB3 0FB,
+  U.K.}, \bibinfo{year}{2006}),
+  \urlprefix\url{https://github.com/CompPhysics/MachineLearning/blob/master/doc/Textbooks/Bishop%20-%20Pattern%20Recognition%20and%20Machine.pdf}.
 
+\bibitem[{\citenamefont{Yamahata}(2024)}]{Yamahata_2024}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Yamahata}},
+  \emph{\bibinfo{title}{Visualizing tycho brahe’s astronomical observations
+  of mars}} (\bibinfo{year}{2024}),
+  \urlprefix\url{https://observablehq.com/@christophe-yamahata/visualizing-tycho-brahe-s-astronomical-observations-mars}.
+
+\bibitem[{\citenamefont{Haugan}(2019{\natexlab{a}})}]{johau1}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Haugan}},
+  \emph{\bibinfo{title}{Matematikk for ingeniørstudenter}}
+  (\bibinfo{publisher}{John Haugan}, \bibinfo{address}{Røyseplassen 11,
+  Drammen}, \bibinfo{year}{2019}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Haugan}(2019{\natexlab{b}})}]{johau2}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Haugan}},
+  \emph{\bibinfo{title}{Matematikk for ingeniørstudenter}}
+  (\bibinfo{publisher}{John Haugan}, \bibinfo{address}{Røyseplassen 11,
+  Drammen}, \bibinfo{year}{2019}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Hjorth-Jensen}(2025{\natexlab{a}})}]{fysml1}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hjorth-Jensen}},
+  \emph{\bibinfo{title}{Machine Learning Lecture Notes 2025}}
+  (\bibinfo{publisher}{Department of Physics}, \bibinfo{address}{University of
+  Oslo, Norway}, \bibinfo{year}{2025}{\natexlab{a}}),
+  \urlprefix\url{https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/chapter3.html}.
+
+\bibitem[{\citenamefont{Hjorth-Jensen}(2015)}]{compfys}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hjorth-Jensen}},
+  \emph{\bibinfo{title}{Computational Physics Lecture Notes 2015}}
+  (\bibinfo{publisher}{Department of Physics}, \bibinfo{address}{University of
+  Oslo, Norway}, \bibinfo{year}{2015}),
+  \urlprefix\url{https://github.com/CompPhysics/ComputationalPhysics/blob/master/doc/Lectures/lectures2015.pdf}.
+
+\bibitem[{\citenamefont{Zhang~Yi}(2004)}]{eigenvalue}
+\bibinfo{author}{\bibfnamefont{H.~J.~T.} \bibnamefont{Zhang~Yi},
+  \bibfnamefont{Yan~Fu}}, \bibinfo{journal}{Computers and Mathematics with
+  Applications} \textbf{\bibinfo{volume}{47}}, \bibinfo{pages}{1155}
+  (\bibinfo{year}{2004}),
+  \urlprefix\url{https://doi.org/10.1016/S0898-1221(04)90110-1}.
+
+\bibitem[{\citenamefont{Hein}(2018)}]{hein}
+\bibinfo{author}{\bibfnamefont{K.~B.} \bibnamefont{Hein}},
+  \emph{\bibinfo{title}{Data Analysis and Machine Learning: Using Neural
+  networks to solve ODEs and PDEs}} (\bibinfo{publisher}{Department of
+  Informatics}, \bibinfo{address}{University of Oslo, Norway},
+  \bibinfo{year}{2018}),
+  \urlprefix\url{https://compphysics.github.io/MachineLearning/doc/pub/odenn/html/._odenn-bs000.html}.
+
+\bibitem[{\citenamefont{Hastie et~al.}(2009{\natexlab{a}})\citenamefont{Hastie,
+  R.Tibshirani, and J.Friedman}}]{hastie}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Hastie}},
+  \bibinfo{author}{\bibnamefont{R.Tibshirani}}, \bibnamefont{and}
+  \bibinfo{author}{\bibnamefont{J.Friedman}}, \emph{\bibinfo{title}{The
+  Elements of Statistical Learning: Data Mining, Inference, and Prediction,
+  Second Edition. Springer Series in Statistics}}
+  (\bibinfo{publisher}{Springer}, \bibinfo{address}{New York},
+  \bibinfo{year}{2009}{\natexlab{a}}),
+  \urlprefix\url{https://link.springer.com/book/10.1007\%2F978-0-387-84858-7}.
+
+\bibitem[{\citenamefont{James et~al.}(2013{\natexlab{a}})\citenamefont{James,
+  Witten, Hastie, and Tibshirani}}]{introstat}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{James}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Witten}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Hastie}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tibshirani}},
+  \emph{\bibinfo{title}{An Introduction to Statistical Learning: with
+  Applications in R}}, Springer Texts in Statistics
+  (\bibinfo{publisher}{Springer}, \bibinfo{address}{New York},
+  \bibinfo{year}{2013}{\natexlab{a}}), ISBN \bibinfo{isbn}{978-1-4614-7137-0},
+  \urlprefix\url{https://www.statlearning.com/}.
+
+\bibitem[{\citenamefont{Hastie et~al.}(2009{\natexlab{b}})\citenamefont{Hastie,
+  R.Tibshirani, and J.Friedman}}]{hastie1}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Hastie}},
+  \bibinfo{author}{\bibnamefont{R.Tibshirani}}, \bibnamefont{and}
+  \bibinfo{author}{\bibnamefont{J.Friedman}}, \emph{\bibinfo{title}{The
+  Elements of Statistical Learning: Data Mining, Inference, and Prediction,
+  Second Edition. Springer Series in Statistics}}
+  (\bibinfo{publisher}{Springer}, \bibinfo{address}{New York},
+  \bibinfo{year}{2009}{\natexlab{b}}),
+  \urlprefix\url{https://link.springer.com/book/10.1007\%2F978-0-387-84858-7}.
+
+\bibitem[{\citenamefont{Pedregosa et~al.}(2011)\citenamefont{Pedregosa,
+  Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss,
+  Dubourg et~al.}}]{scikit-learn}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Pedregosa}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Varoquaux}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Gramfort}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Michel}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Thirion}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Grisel}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Blondel}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Prettenhofer}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Weiss}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Dubourg}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Journal of Machine Learning Research}
+  \textbf{\bibinfo{volume}{12}}, \bibinfo{pages}{2825} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Hjorth-Jensen}(2025{\natexlab{b}})}]{fysml2}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hjorth-Jensen}},
+  \emph{\bibinfo{title}{Machine Learning Lecture Notes 2025}}
+  (\bibinfo{publisher}{Department of Physics}, \bibinfo{address}{University of
+  Oslo, Norway}, \bibinfo{year}{2025}{\natexlab{b}}),
+  \urlprefix\url{https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/chapter2.html}.
+
+\bibitem[{\citenamefont{a}(2)}]{elestat1}
+\bibinfo{author}{\bibnamefont{a}}, \emph{\bibinfo{title}{IntroStat}}
+  (\bibinfo{publisher}{S}, \bibinfo{address}{C}, \bibinfo{year}{2}),
+  \urlprefix\url{github}.
+
+\bibitem[{\citenamefont{James et~al.}(2013{\natexlab{b}})\citenamefont{James,
+  Witten, Hastie, and Tibshirani}}]{introstat1}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{James}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Witten}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Hastie}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tibshirani}},
+  \emph{\bibinfo{title}{An Introduction to Statistical Learning: with
+  Applications in R}}, Springer Texts in Statistics
+  (\bibinfo{publisher}{Springer}, \bibinfo{address}{New York},
+  \bibinfo{year}{2013}{\natexlab{b}}), ISBN \bibinfo{isbn}{978-1-4614-7137-0},
+  \urlprefix\url{https://www.statlearning.com/}.
+
+\bibitem[{\citenamefont{Raschka
+  et~al.}(2022{\natexlab{a}})\citenamefont{Raschka, Liu, and
+  Mirjalili}}]{Raschka-et-al-2022}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Raschka}},
+  \bibinfo{author}{\bibfnamefont{Y.~H.} \bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Mirjalili}},
+  \emph{\bibinfo{title}{Machine Learning with PyTorch and Scikit-Learn}}
+  (\bibinfo{publisher}{Packt Publishing Ltd},
+  \bibinfo{year}{2022}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Hastie et~al.}(2009{\natexlab{c}})\citenamefont{Hastie,
+  Tibshirani, and Friedman}}]{Hastie-et-al-2009}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Hastie}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tibshirani}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Friedman}},
+  \emph{\bibinfo{title}{The Elements of Statistical Learning}}
+  (\bibinfo{publisher}{Springer}, \bibinfo{year}{2009}{\natexlab{c}}).
+
+\bibitem[{\citenamefont{Hjorth-Jensen}(2025{\natexlab{c}})}]{fysml6}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hjorth-Jensen}},
+  \emph{\bibinfo{title}{Machine Learning Lecture Notes 2025}}
+  (\bibinfo{publisher}{Department of Physics}, \bibinfo{address}{University of
+  Oslo, Norway}, \bibinfo{year}{2025}{\natexlab{c}}),
+  \urlprefix\url{https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/chapter1.html}.
+
+\bibitem[{\citenamefont{James et~al.}(2013{\natexlab{c}})\citenamefont{James,
+  Witten, Hastie, and Tibshirani}}]{introstat2}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{James}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Witten}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Hastie}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Tibshirani}},
+  \emph{\bibinfo{title}{An Introduction to Statistical Learning: with
+  Applications in R}}, Springer Texts in Statistics
+  (\bibinfo{publisher}{Springer}, \bibinfo{address}{New York},
+  \bibinfo{year}{2013}{\natexlab{c}}), ISBN \bibinfo{isbn}{978-1-4614-7137-0},
+  \urlprefix\url{https://www.statlearning.com/}.
+
+\bibitem[{\citenamefont{Raschka
+  et~al.}(2022{\natexlab{b}})\citenamefont{Raschka, Liu, and
+  Mirjalili}}]{rasch3}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Raschka}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Mirjalili}},
+  \emph{\bibinfo{title}{Machine Learning with PyTorch and Scikit-Learn}}
+  (\bibinfo{publisher}{Packt Publishing Ltd}, \bibinfo{address}{Birmingham,
+  UK}, \bibinfo{year}{2022}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Hjorth-Jensen}(2025{\natexlab{d}})}]{fysml3}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hjorth-Jensen}},
+  \emph{\bibinfo{title}{Machine Learning Lecture Notes 2025}}
+  (\bibinfo{publisher}{Department of Physics}, \bibinfo{address}{University of
+  Oslo, Norway}, \bibinfo{year}{2025}{\natexlab{d}}),
+  \urlprefix\url{https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/week36.html}.
+
+\bibitem[{\citenamefont{Hjorth-Jensen}(2025{\natexlab{e}})}]{fysml4}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hjorth-Jensen}},
+  \emph{\bibinfo{title}{Machine Learning Lecture Notes 2025}}
+  (\bibinfo{publisher}{Department of Physics}, \bibinfo{address}{University of
+  Oslo, Norway}, \bibinfo{year}{2025}{\natexlab{e}}),
+  \urlprefix\url{https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/chapteroptimization.html}.
+
+\bibitem[{\citenamefont{Raschka
+  et~al.}(2022{\natexlab{c}})\citenamefont{Raschka, Liu, and
+  Mirjalili}}]{rasch1}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Raschka}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Liu}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Mirjalili}},
+  \emph{\bibinfo{title}{Machine Learning with PyTorch and Scikit-Learn}}
+  (\bibinfo{publisher}{Packt Publishing Ltd}, \bibinfo{address}{Birmingham,
+  UK}, \bibinfo{year}{2022}{\natexlab{c}}).
+
+\bibitem[{\citenamefont{Goodfellow et~al.}(2016)\citenamefont{Goodfellow,
+  Bengio, and Courville}}]{Goodfellow-et-al-2016}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Goodfellow}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Bengio}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Courville}},
+  \emph{\bibinfo{title}{Deep Learning}} (\bibinfo{publisher}{MIT Press},
+  \bibinfo{year}{2016}), \bibinfo{note}{\url{http://www.deeplearningbook.org}}.
+
+\bibitem[{\citenamefont{Hjorth-Jensen}(2025{\natexlab{f}})}]{fysml5}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hjorth-Jensen}},
+  \emph{\bibinfo{title}{Machine Learning Lecture Notes 2025}}
+  (\bibinfo{publisher}{Department of Physics}, \bibinfo{address}{University of
+  Oslo, Norway}, \bibinfo{year}{2025}{\natexlab{f}}),
+  \urlprefix\url{https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/chapteroptimization.html}.
+
+\bibitem[{\citenamefont{Murphy}(2022)}]{murphy1}
+\bibinfo{author}{\bibfnamefont{K.~P.} \bibnamefont{Murphy}},
+  \emph{\bibinfo{title}{Probabilistic Machine Learning: An introduction}}
+  (\bibinfo{publisher}{MIT Press}, \bibinfo{year}{2022}),
+  \urlprefix\url{\url{http://probml.github.io/book1}}.
+
+\end{thebibliography}
