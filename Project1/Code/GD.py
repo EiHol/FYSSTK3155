@@ -57,12 +57,12 @@ def gradient_descent( X, y, lmbda=0, eta=0.01, num_iters=1000, plot=True, font_s
 
 
 # Gradient Descent with Momentum
-def gradient_descent_momentum(X, y, lmbda=0, alpha=0.9, eta=0.01, n_iterations=1000, tolerance=1e-6, plot=True,  font_size = 14, method=None):
+def gradient_descent_momentum(X, y, lmbda=0, alpha=0.9, eta=0.01, n_iterations=1000, tolerance=1e-6, plot=False,  font_size = 14, method=None):
 
     # Extract number of datapoints and number of parameters from the design matrix
     n, p = X.shape
-    # Selecting a random theta to begin the gradient decent
-    theta = np.random.randn(p,1)
+    # Intital guess 0
+    theta = np.zeros((p, 1))
 
     # Initial velocity
     v = np.zeros((p, 1))

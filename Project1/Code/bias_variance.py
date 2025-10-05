@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from bootstrap import bootstrap
 
 
-def bias_variance_tradeoff(x, y, degrees, bootstraps=500, test_size=0.2, random_state=27, sigma2=None):
+def bias_variance_tradeoff(x, y, degrees, bootstraps=500, test_size=0.3, random_state=27):
     #y_true is our noiseless function
 
     biases = []

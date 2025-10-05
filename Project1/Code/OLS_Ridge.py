@@ -14,9 +14,8 @@ from sklearn.utils import resample
 
 # %%
 # Generate data
-def generate_data(n, noise = True):
+def generate_data(n, noise = True, seed=42):
     # Fixed seed value to ensure consisten results across runs
-    seed = 42
     np.random.seed(seed)
     # Creating an array with equally spaced data
     x = np.linspace(-1, 1, n)
@@ -53,6 +52,27 @@ def polynomial_features(x, p, lmbda):
 
 
 # %%
+# Design matrix
+def polynomial_features(x, p, lmbda):
+    # Length of the design matrix
+    n = len(x)
+    # Creating an empty feature matrix
+    if lmbda == 0: #OLS
+        X = np.zeros((n, p + 1))
+        # Intercept column
+        X[:, 0] = np.ones(n)
+        for power in range(1, p+1):
+            X[:, power] = x**power
+
+    else: # Ridge
+        X = np.zeros((n, p))
+        for power in range(1, p+1): 
+            X[:, power-1] = x**power
+            
+    
+    return X
+
+
 def fit_polynomial(x, y, degree, lmbda = 0, test_size=0.3, eta = 0.01, epochs = 50, batch_size = 5, GD=False, n_iter = None, SGD = False, momentum = False):
     # Creating the feature matrix
     Xpoly = polynomial_features(x, degree, lmbda)
@@ -148,6 +168,69 @@ def plot_mse_r2(results, n, GD=False, R2=True):
     plt.tight_layout()
     plt.show()
 
+# %%
+def plot_mse_r2_Lasso(results, n, GD="GD", R2=True):
+    degrees   = [r["degree"] for r in results]
+    train_mse = [r["train_mse"] for r in results]
+    test_mse  = [r["test_mse"] for r in results]
+
+    _, ax1 = plt.subplots(figsize=(8,5))
+    ax1.set_xlabel("Polynomial Degree", fontsize=14)
+    ax1.set_ylabel("MSE", fontsize=14)
+    ax1.plot(degrees, train_mse, 'o-', color="tab:blue", label="Train MSE")
+    ax1.plot(degrees, test_mse,  's-', color="tab:red",  label="Test MSE")
+
+    if R2:  # Option of having MSE vs Polynomial degree
+        train_r2 = [r["train_r2"] for r in results]
+        test_r2  = [r["test_r2"] for r in results]
+        ax2 = ax1.twinx()
+        ax2.set_ylabel("R²", fontsize=14)
+        ax2.plot(degrees, train_r2, 'o-', color="tab:green", label="Train R²")
+        ax2.plot(degrees, test_r2,  's-', color="tab:orange", label="Test R²")
+        lines1, labels1 = ax1.get_legend_handles_labels()
+        lines2, labels2 = ax2.get_legend_handles_labels()
+        ax1.legend(lines1 + lines2, labels1 + labels2,
+                   bbox_to_anchor=(1.05, 1), loc="upper left", borderaxespad=0.)
+    else:
+        ax1.legend(loc="upper right")
+    
+    title = f"MSE {'& $R^2$ ' if R2 else ''}w/{GD} (n={n})"
+    plt.title(title, fontsize=16)
+    plt.tick_params(axis='both', which='major', labelsize=12)
+    plt.tight_layout()
+    plt.show()
+
+def plot_mse_r2_CV(results, n, GD="GD", R2=True):
+    kfolds   = [r["K-Folds"] for r in results]
+    train_mse = [r["train_mse"] for r in results]
+    test_mse  = [r["test_mse"] for r in results]
+
+    _, ax1 = plt.subplots(figsize=(8,5))
+    ax1.set_xlabel("K-Folds", fontsize=14)
+    ax1.set_ylabel("Mean MSE", fontsize=14)
+    ax1.plot(kfolds, train_mse, 'o-', color="tab:blue", label="Train MSE")
+    ax1.plot(kfolds, test_mse,  's-', color="tab:red",  label="Test MSE")
+
+    if R2:  # Option of having MSE vs Polynomial degree
+        train_r2 = [r["train_r2"] for r in results]
+        test_r2  = [r["test_r2"] for r in results]
+        ax2 = ax1.twinx()
+        ax2.set_ylabel("R²", fontsize=14)
+        ax2.plot(kfolds, train_r2, 'o-', color="tab:green", label="Train R²")
+        ax2.plot(kfolds, test_r2,  's-', color="tab:orange", label="Test R²")
+        lines1, labels1 = ax1.get_legend_handles_labels()
+        lines2, labels2 = ax2.get_legend_handles_labels()
+        ax1.legend(lines1 + lines2, labels1 + labels2,
+                   bbox_to_anchor=(1.05, 1), loc="upper left", borderaxespad=0.)
+    else:
+        ax1.legend(loc="upper right")
+    
+    title = f"Mean MSE {'& $R^2$ ' if R2 else ''}w/{GD} (n={n})"
+    plt.title(title, fontsize=16)
+    plt.tick_params(axis='both', which='major', labelsize=12)
+    plt.tight_layout()
+    plt.show()
+
 
 # %%
 def mse_heatmap(results_by_n, degrees, GD=False):
@@ -223,6 +306,7 @@ def run_experiments(x, y, degrees, lmbda = 0, test_size=0.3, eta = 0.01, epochs 
     return results
 
 
+
 def fit_polynomial_mod(X_train, X_test, y_train, y_test, lmbda = 0, test_size=0.3, eta = 0.01, epochs = 50, batch_size = 5, GD=False, n_iter = 1000, SGD = False, momentum = False):  
     if lmbda == 0: #OLS 
         # Getting the estimators
@@ -240,7 +324,7 @@ def fit_polynomial_mod(X_train, X_test, y_train, y_test, lmbda = 0, test_size=0.
         test_pred = X_test @ theta
 
         # Storing the different vectors which we will use for our plots
-        results = { "train_mse": mean_squared_error(y_train, train_pred),
+        results = {"train_mse": mean_squared_error(y_train, train_pred),
                     "test_mse": mean_squared_error(y_test, test_pred),
                     "train_r2": r2_score(y_train, train_pred),
                     "test_r2": r2_score(y_test, test_pred),
@@ -263,7 +347,7 @@ def fit_polynomial_mod(X_train, X_test, y_train, y_test, lmbda = 0, test_size=0.
         elif SGD: #Stochastic GD
             theta, cost_hist = gradient_descent(X_train_s, y_train_c, lmbda, eta, epochs=epochs, batch_size=batch_size, plot = False)
         elif momentum: #GD w/momentum
-            theta, cost_hist = gradient_descent_momentum(X_train, y_train, lmbda, eta=eta, n_iterations=n_iter, plot=False, method=None)
+            theta, cost_hist = gradient_descent_momentum(X_train_s, y_train_c, lmbda, eta=eta, n_iterations=n_iter, plot=False, method=None)
         else:
             _, p = X_train_s.shape
             theta = np.linalg.inv(X_train_s.T @ X_train_s + lmbda * np.eye(p)) @ X_train_s.T @ y_train_c
